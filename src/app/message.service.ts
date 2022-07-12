@@ -12,6 +12,7 @@ export class MessageService {
 
 
   add(message: string) {
+    /* Se muestra un snackBar -> ya no hace falta componente Messages */
     this._snackBar.open(message, 'Close', {
       duration: 2000,
     });

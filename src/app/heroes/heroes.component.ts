@@ -14,8 +14,9 @@ import { MatTableDataSource } from '@angular/material/table';
 ]
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[] = [];
+  /* Importante declarar dataSource y actualizarlo en get y add */
   dataSource = new MatTableDataSource<Hero>();
+  heroes: Hero[] = [];
   displayedColumns: string[] = ['id', 'name', 'delete', 'details']
 
   constructor(private heroService: HeroService) { }
@@ -30,8 +31,6 @@ export class HeroesComponent implements OnInit {
         this.heroes = heroes;
         this.dataSource.data = this.heroes;
       });
-
-
   }
 
   add(name: string): void {
