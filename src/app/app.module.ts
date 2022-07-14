@@ -22,8 +22,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,4 +53,5 @@ import {MatTableModule} from '@angular/material/table';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
